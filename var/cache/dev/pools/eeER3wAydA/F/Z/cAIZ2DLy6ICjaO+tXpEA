@@ -1,0 +1,201 @@
+<?php //resource_metadata_06cf21d6b3a726a1deadff4ee9d763bd
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['ApiPlatform\\Core\\Metadata\\Resource\\ResourceMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Metadata\\Resource\\ResourceMetadata')),
+    ],
+    null,
+    [
+        'ApiPlatform\\Core\\Metadata\\Resource\\ResourceMetadata' => [
+            'shortName' => [
+                'User',
+            ],
+            'description' => [
+                '',
+            ],
+            'itemOperations' => [
+                [
+                    'get_apprenants' => [
+                        'method' => 'GET',
+                        'path' => '/apprenants/{id}',
+                        'access_control' => '(is_granted(\'ROLE_CM\'))',
+                        'access_control_message' => 'Vous n\'avez pas access à cette Ressource',
+                        'input' => null,
+                        'output' => null,
+                        'input_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                        ],
+                        'output_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                        ],
+                    ],
+                    'get_formateurs' => [
+                        'method' => 'GET',
+                        'path' => '/formateurs/{id}',
+                        'access_control' => '(is_granted(\'ROLE_CM\'))',
+                        'access_control_message' => 'Vous n\'avez pas access à cette Ressource',
+                        'input' => null,
+                        'output' => null,
+                        'input_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                        ],
+                        'output_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                        ],
+                    ],
+                    'put_apprenants' => [
+                        'method' => 'PUT',
+                        'path' => '/apprenants/{id}/update',
+                        'access_control' => '(is_granted(\'ROLE_APPRENANT\'))',
+                        'access_control_message' => 'Vous n\'avez pas access à cette Ressource',
+                        'input' => null,
+                        'output' => null,
+                        'input_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                        ],
+                        'output_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'collectionOperations' => [
+                [
+                    'get_apprenants' => [
+                        'method' => 'GET',
+                        'path' => '/apprenants',
+                        'normalization_context' => [
+                            'groups' => 'apprenant:read',
+                        ],
+                        'access_control' => '(is_granted(\'ROLE_APPRENANT\') or is_granted(\'ROLE_CM\'))',
+                        'access_control_message' => 'Vous n\'avez pas access à cette Ressource',
+                        'route_name' => 'apprenant_liste',
+                        'input' => null,
+                        'output' => null,
+                        'input_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                        ],
+                        'output_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                        ],
+                    ],
+                    'get_formateurs' => [
+                        'method' => 'GET',
+                        'path' => '/formateurs',
+                        'normalization_context' => [
+                            'groups' => 'formateur:read',
+                        ],
+                        'access_control' => '(is_granted(\'ROLE_CM\'))',
+                        'access_control_message' => 'Vous n\'avez pas access à cette Ressource',
+                        'route_name' => 'formateurs_liste',
+                        'input' => null,
+                        'output' => null,
+                        'input_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                        ],
+                        'output_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'graphql' => [
+                [
+                    'item_query' => [],
+                    'collection_query' => [],
+                    'delete' => [],
+                    'update' => [],
+                    'create' => [],
+                ],
+            ],
+            'attributes' => [
+                [
+                    'input' => null,
+                    'output' => null,
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

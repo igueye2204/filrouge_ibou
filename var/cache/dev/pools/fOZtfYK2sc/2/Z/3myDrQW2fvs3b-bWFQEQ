@@ -1,0 +1,63 @@
+<?php //%255BApp%255CEntity%255CUser%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        clone ($p['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'repositoryClass' => [
+                'App\\Repository\\UserRepository',
+            ],
+            'collectionOperations' => [
+                1 => [
+                    'get_apprenants' => [
+                        'method' => 'GET',
+                        'path' => '/apprenants',
+                        'normalization_context' => [
+                            'groups' => 'apprenant:read',
+                        ],
+                        'access_control' => '(is_granted(\'ROLE_ADMIN\') or is_granted(\'ROLE_CM\'))',
+                        'access_control_message' => 'Vous n\'avez pas access à cette Ressource',
+                        'route_name' => 'apprenant_liste',
+                    ],
+                    'get_formateurs' => [
+                        'method' => 'GET',
+                        'path' => '/formateurs',
+                        'normalization_context' => [
+                            'groups' => 'formateur:read',
+                        ],
+                        'access_control' => '(is_granted(\'ROLE_ADMIN\') or is_granted(\'ROLE_CM\'))',
+                        'access_control_message' => 'Vous n\'avez pas access à cette Ressource',
+                        'route_name' => 'formateurs_liste',
+                    ],
+                ],
+            ],
+            'itemOperations' => [
+                1 => [
+                    'get',
+                    'put',
+                    'get_apprenants' => [
+                        'method' => 'GET',
+                        'path' => '/apprenants/{id}',
+                    ],
+                    'get_formateurs' => [
+                        'method' => 'GET',
+                        'path' => '/formateurs/{id}',
+                    ],
+                    'put_apprenants' => [
+                        'method' => 'PUT',
+                        'path' => '/apprenants/{id}/update',
+                    ],
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];
